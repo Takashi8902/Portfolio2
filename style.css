@@ -1,0 +1,259 @@
+.home {
+    margin: 0%;
+}
+
+/* Headerのスタイルシート */
+.header-menu .menu-list {
+    display: flex;
+    list-style: none;
+    margin-top: 8px;
+    margin-bottom: 1px;
+    padding-inline-start: 20px; }
+
+.menu-list li {
+    margin-right: 30px;
+    align-items: flex-start;
+}
+
+.header-menu .menu-list img.home-icon {
+    height: 42px;
+}
+
+.header-menu .menu-list img.about-icon {
+    height: 40px;
+}
+
+.header-menu .menu-list img.projects-icon {
+    height: 40px;
+}
+
+.ditch {
+    height: 0px;
+    border-bottom: 3px solid #fa4646;
+}
+
+/* mainのスタイルシート */
+.home .main {
+    width: 100%;
+    height: 405px;
+    background-color: #fafafa;
+}
+
+.main .profile {
+    float: left;
+}
+
+.main .name h2 {
+    font-size: 50px;
+    margin: 0;
+    padding: 50px 0 0 50px;
+}
+
+.main .description {
+    padding: 5px 0 0 50px;
+}
+
+.main .description p {
+    margin-top: 0;
+    color: #fa4646;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.home .main img {
+    height: 400px;
+    float: right;
+    padding-top: 5px;
+    padding-right: 60px;
+    padding-bottom: 0%;
+}
+
+/* aboutのスタイルシート */
+.home .about {
+    clear: both;
+    height: 380px;
+    background-color: #fa4646;
+    color: white;
+    text-align: center;
+}
+
+.about h3 {
+    padding-top: 30px;
+    margin-top: 0%;
+    font-size: 30px;
+}
+
+.about .sns-icon ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.about .sns-icon img {
+    width: 40px;
+    border-radius: 50%;
+    padding-right: 10px;
+}
+
+
+
+/* projectsのスタイルシート */
+
+.home .projects {
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.projects .title  h3 {
+    padding-top: 30px;
+    margin-top: 0%;
+    font-size: 30px;
+    color: #fa4646;
+}
+
+.projects .projects-contents {
+    text-align: center;
+}
+
+.work-list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.work-list ul {
+    width: 100%;
+    margin: 10px auto;
+}
+
+.work-list li {
+    padding-right: 15px;
+}
+
+.work-list .work h4 {
+    font-size: 20px;
+}
+
+.work-list .work p {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.work-list .work img {
+    width: 380px;
+    border: 1px solid #fa4646;
+}
+
+.work-list .work .link a {
+    text-decoration: none;
+    color: white;
+    background-color: #fa4646;
+    padding: 10px;
+    margin: 0 10px 0 10px;
+    width: 500px;
+}
+
+
+/* Contactのスタイルシート */
+
+.home .contact {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.contact .title  h3 {
+    padding-top: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+.contact .title h3 .red {
+    color: #fa4646;
+}
+
+.contact .info ul {
+    margin-top: 50px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0 100px 0 100px;
+}
+
+.contact .info ul li {
+    width: 350px;
+    margin: 30px;
+    padding-top: 10px;
+    border-bottom: 3px solid red;
+    background-color: #dbdbdb;
+    text-align: center;
+}
+
+.info ul li img {
+    width: 35px;
+}
+
+.info p {
+    font-size: 13px;
+}
+
+.info {
+    margin-bottom: 70px;
+}
+
+/* footerのスタイルシート */
+.footer {
+    height: 80px;
+    padding: 15px 0 15px 0;
+    text-align: center;
+    background-color: #dbdbdb;
+    margin: 0%
+}
+
+
+/* スマホ用スタイルシート */
+@media screen and (max-width: 767px) {
+    .home .main {
+        width: 100%;
+        height: 690px;
+    }
+
+    .home .about {
+        height: 420px;
+    }
+
+    .work-list {
+        max-width: 100%;
+        display: block;
+    }
+
+    .work-list li {
+        max-width: 100%;
+        float: none;
+        padding-right: 0px;
+        margin-bottom: 60px;
+    }
+
+    .work-list .work img {
+        max-width: 100%;
+    }
+
+    .contact .info ul {
+        display: block;
+    }
+
+    .contact .info ul li {
+        max-width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .footer {
+        height: 50px;
+    }
+    
+}
